@@ -1,0 +1,75 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OneTap Admin Login - Dashboard</title>
+    <script defer src="javascript/dashboard.js"></script>
+    <link rel="stylesheet" href="style/dashboard.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <div style="min-width: 960px; margin: 0 auto;">
+
+    <div id="mySidenav" class="sidenav">
+        <p class="logo">OneTap</p>
+        <a href="dashboard.html" class="active"><i class="fa fa-dashboard icons1"></i> Dashboard</a>
+        <a href="history.html" class="inactive"><i class="	fa fa-history icons"></i> History</a>
+        <a href="validation.html" class="inactive"><i class="fa fa-user icons"></i> Validation</a>
+        <a href="#" class="inactive"><i class="fa fa-cog icons"></i> About Us</a>
+    </div>
+    <div id="main">
+        <div class="head">
+            <div class="col-div-6">
+                <p class="nav"> Dashboard</p>
+
+            </div>
+
+            <div class="col-div-6">
+                <div class="profile">
+
+                    <img src="image/admin.png" class="pro-img" />
+                    <p>Admin<i class="fa fa-ellipsis-v dots" aria-hidden="true"></i></p>
+                    <div class="profile-div">
+                        <p><i class="fa fa-power-off"></i> Log Out</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANb6CiLX7eEBv4BQMnHMsILzhWqIaTc_s&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".profile p").click(function () {
+                $(".profile-div").toggle();
+
+            });
+            $(".noti-icon").click(function () {
+                $(".notification-div").toggle();
+            });
+
+
+
+
+        });
+    </script>
+    </div>
+</body>
+
+
+</html>
